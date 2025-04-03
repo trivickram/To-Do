@@ -28,23 +28,39 @@ body{
     justify-content: center;
     margin-top:20px ;
 }
-input{
+#taskInput {
     border: none;
     padding: 10px 20px;
     font-size: 16px;
     border-radius: 15px;
-    width: 250px;
+    width: 400px;
+    min-width: 150px;
+    /* margin-left: 20px; */
 }
+
+@media (max-width: 600px) {
+    #taskInput {
+        width: 90%; 
+    }
+
+}
+
 input:focus{
     outline: none;
     border: none;
 }
+form{
+    position: absolute;
+}
 #addTaskButton{
     background-color: #4deeea;
-    /* color: white; */
     border: none;
     padding: 10px 10px;
     font-size: 16px;
     cursor: pointer;
     border-radius: 15px;
+    position: absolute;
+    width: 100px;
+    top: 0;
+    right: 0;
 }
