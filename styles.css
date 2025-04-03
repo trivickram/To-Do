@@ -1,66 +1,85 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: cursive;
-    
 }
-body{
+
+body {
     background-color: #101010;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     height: 100vh;
 }
- .title{
-    margin-top: 15%;   
-    font-weight:lighter;
-    display: flex;
+
+.title {
+    margin-top: -15%;
+    font-weight: bolder;
     color: #4deeea;
-    justify-content: center;
-    align-items: center;
-    font-weight:bolder;
     font-size: 50px;
     text-align: center;
 }
-.container{
+
+.container {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    margin-top:20px ;
+    margin-top: 20px;   
+    width: 90%; /* Ensures input takes full width */
+    max-width: 500px; /* Prevents it from being too wide */
 }
+
+/* Form container */
+form {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+/* Input Box */
 #taskInput {
+    width: 100%;  /* Takes full available space */
     border: none;
     padding: 10px 20px;
     font-size: 16px;
     border-radius: 15px;
-    width: 400px;
-    min-width: 150px;
-    /* margin-left: 20px; */
 }
 
-@media (max-width: 600px) {
-    #taskInput {
-        width: 90%; 
-    }
-
-}
-
-input:focus{
-    outline: none;
-    border: none;
-}
-form{
-    position: absolute;
-}
-#addTaskButton{
+/* Button */
+#addTaskButton {
     background-color: #4deeea;
     border: none;
-    padding: 10px 10px;
+    padding: 10px;
     font-size: 16px;
     cursor: pointer;
     border-radius: 15px;
     position: absolute;
-    width: 100px;
-    top: 0;
     right: 0;
+    top: 0;
+    height: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    #taskInput {
+        width: 100%;
+        padding-right: 90px; /* Makes space for the button */
+    }
+
+    #addTaskButton {
+        width: 80px; /* Ensures button does not get too big */
+        padding: 10px 0; /* Adjusts padding for smaller screens */
+    }
+}
+
+/* Remove input focus outline */
+input:focus {
+    outline: none;
 }
