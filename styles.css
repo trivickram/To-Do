@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+    
+}
+body{
+    background-color: #101010;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+ .title{
+    margin-top: 15%;   
+    font-weight:lighter;
+    display: flex;
+    color: #4deeea;
+    justify-content: center;
+    align-items: center;
+    font-weight:bolder;
+    font-size: 50px;
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top:20px ;
+}
+input{
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 15px;
+    width: 300px;
+}
+input:focus{
+    outline: none;
+    border: none;
+}
+#addTaskButton{
+    background-color: #4deeea;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 15px;
+}
