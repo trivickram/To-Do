@@ -26,27 +26,24 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 20px;   
-    width: 90%; /* Ensures input takes full width */
-    max-width: 500px; /* Prevents it from being too wide */
+    width: 90%; 
+    max-width: 500px; 
 }
 
-/* Form container */
 form {
     display: flex;
     width: 100%;
     position: relative;
 }
 
-/* Input Box */
 #taskInput {
-    width: 100%;  /* Takes full available space */
+    width: 100%; 
     border: none;
     padding: 10px 20px;
     font-size: 16px;
     border-radius: 15px;
 }
 
-/* Button */
 #addTaskButton {
     background-color: #4deeea;
     border: none;
@@ -60,26 +57,26 @@ form {
     height: 100%;
 }
 
-/* Responsive adjustments */
 @media (max-width: 600px) {
     .container {
         width: 100%;
         max-width: 100%;
         padding: 0 10px;
     }
-
+    .title{
+        margin-top: -50%;
+    }
     #taskInput {
         width: 100%;
-        padding-right: 90px; /* Makes space for the button */
+        padding-right: 90px; 
     }
 
     #addTaskButton {
-        width: 80px; /* Ensures button does not get too big */
-        padding: 10px 0; /* Adjusts padding for smaller screens */
+        width: 80px;
+        padding: 10px 0; 
     }
 }
 
-/* Remove input focus outline */
 input:focus {
     outline: none;
 }
