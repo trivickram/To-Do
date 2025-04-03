@@ -33,7 +33,7 @@ input{
     padding: 10px 20px;
     font-size: 16px;
     border-radius: 15px;
-    width: 300px;
+    width: 250px;
 }
 input:focus{
     outline: none;
@@ -41,9 +41,9 @@ input:focus{
 }
 #addTaskButton{
     background-color: #4deeea;
-    color: white;
+    /* color: white; */
     border: none;
-    padding: 10px 20px;
+    padding: 10px 10px;
     font-size: 16px;
     cursor: pointer;
     border-radius: 15px;
